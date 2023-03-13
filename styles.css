@@ -29,7 +29,6 @@ body {
 }
 
 .hamburger_active {
-  background: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.5;
 }
@@ -52,6 +51,21 @@ body {
   align-items: center;
   right: 24px;
   display: none;
+}
+
+.menu_mobile_active {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  width: 329px;
+  position: absolute;
+  z-index: 1;
+  background: white;
+  top: 106px;
+  align-items: center;
+  right: 24px;
 }
 
 .menu_little_pointer {
@@ -220,6 +234,22 @@ body {
   text-transform: uppercase;
   color: #24303e;
   margin-top: 32px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.learn_more_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.learn_more_box:hover .underline_1{
+  opacity: 1;
+}
+
+.learn_more_box:hover .underline_2{
+  opacity: 1;
 }
 
 .underline_1 {
@@ -231,6 +261,8 @@ body {
   width: 137px;
   margin-top: -10px;
 }
+
+
 
 .underline_2 {
   background: #fe7766;
@@ -395,7 +427,7 @@ body {
   display: block;
 }
 
-.container_3_photos_desktop{
+.container_3_photos_desktop {
   display: none;
 }
 
@@ -444,20 +476,41 @@ body {
   margin-top: 88px;
 }
 
+.footer_button:hover {
+  color: white;
+  transition: ease 0.3s;
+}
+
 .facebook {
   cursor: pointer;
+}
+
+.facebook:hover path {
+  fill: white;
 }
 
 .instagram {
   cursor: pointer;
 }
 
+.instagram:hover path {
+  fill: white;
+}
+
 .twitter {
   cursor: pointer;
 }
 
+.twitter:hover path {
+  fill: white;
+}
+
 .pinterest {
   cursor: pointer;
+}
+
+.pinterest:hover path {
+  fill: white;
 }
 
 @media screen and (min-width: 1440px) {
@@ -619,14 +672,14 @@ body {
     margin-top: 40px;
   }
 
-  .container_2{
+  .container_2 {
     padding-left: 165px;
     padding-right: 165px;
     padding-bottom: 160px;
   }
 
-  .h1_container2{
-    margin-top: 160px
+  .h1_container2 {
+    margin-top: 160px;
   }
 
   .creators_box {
@@ -635,20 +688,20 @@ body {
     width: 100%;
   }
 
-  .box_container2{
+  .box_container2 {
     margin-top: 80px;
   }
 
-  .paragraph_container2{
+  .paragraph_container2 {
     width: 350px;
     margin-top: 58px;
   }
 
-  .name{
+  .name {
     margin-top: 69px;
   }
 
-  .container_3_photos{
+  .container_3_photos {
     grid-template-columns: 25% 25% 25% 25%;
   }
 
@@ -656,12 +709,12 @@ body {
     display: none;
   }
 
-  .container_3_photos_desktop{
+  .container_3_photos_desktop {
     display: block;
     width: 100%;
   }
 
-  .footer{
+  .footer {
     padding-top: 72px;
     padding-bottom: 72px;
   }
