@@ -701,7 +701,7 @@ body {
     margin-top: 69px;
   }
 
-  .container_3_photos {
+  .container_3 {
     grid-template-columns: 25% 25% 25% 25%;
   }
 
